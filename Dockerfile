@@ -1,5 +1,7 @@
 FROM ubuntu:noble
 
+COPY --chmod=755 ./entrypoint.sh /usr/local/bin/
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
@@ -11,9 +13,10 @@ RUN apt-get update && apt-get install -y \
 
 VOLUME /media
 EXPOSE 80
+
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/sites-enabled/*
 
-COPY entrypoint.sh /
-RUN chmod +x entrypoint.sh
-CMD ["/entrypoint.sh", "&&", "nginx", "-g", "daemon off;"]
+ENTRYPOINT ["entrypoint.sh"]
+
+CMD ["nginx", "-g", "daemon off;"]
