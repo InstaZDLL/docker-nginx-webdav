@@ -1,4 +1,11 @@
 #!/bin/bash
+: "${TLS_DISABLE:-true}"
+
+
+if [ "$TLS_DISABLE" = "false" ]; then
+    echo "[Info] The WORDPRESS_COMPOSE env var is set to True"
+    sleep 8
+fi
 
 if [[ -n "$USERNAME" ]] && [[ -n "$PASSWORD" ]]
 then

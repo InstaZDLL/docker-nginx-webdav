@@ -26,9 +26,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 
-RUN rm /etc/nginx/sites-enabled/*
+RUN rm /etc/nginx/sites-enabled/* && mkdir -p /ssl
 
-VOLUME [/media]
+VOLUME ["/media", "/ssl"]
 
 EXPOSE 80
 
