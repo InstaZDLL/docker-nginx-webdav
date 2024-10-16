@@ -1,6 +1,6 @@
 FROM ubuntu:noble
 
-RUN apt-get update && apt-get install -y nginx nginx-extras apache2-utils
+RUN apt-get update && apt-get install -y nginx nginx-extras libnginx-mod-http-dav-ext libnginx-mod-http-auth-pam
 
 VOLUME /media
 EXPOSE 80
