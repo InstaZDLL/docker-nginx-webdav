@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:noble
 
 RUN apt-get update && apt-get install -y nginx nginx-extras apache2-utils
 
@@ -9,4 +9,4 @@ RUN rm /etc/nginx/sites-enabled/*
 
 COPY entrypoint.sh /
 RUN chmod +x entrypoint.sh
-CMD /entrypoint.sh && nginx -g "daemon off;"
+CMD ["/entrypoint.sh", "&&", "nginx", "-g", "daemon off;"]
