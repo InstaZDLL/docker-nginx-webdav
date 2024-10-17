@@ -7,13 +7,11 @@ LABEL authors="Darwin Lamark" \
     maintainer="Darwin Lamark <contact@southlabs.fr>" \
     title="docker-nginx-webdav" \
     description="Webdav server based on nginx" \
-    documentation="https://github.com/InstaZDLL/docker-nginx-webdav" \
     base.name="docker.io/library/ubuntu:noble" \
     licenses="MIT" \
     source="https://github.com/InstaZDLL/docker-nginx-webdav" \
     vendor="the Docker Community" \
-    version="2024.10" \
-    url="https://github.com/InstaZDLL/docker-nginx-webdav"
+    version="2024.10"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
