@@ -12,7 +12,7 @@ LABEL authors="Darwin Lamark" \
     licenses="MIT" \
     source="https://github.com/InstaZDLL/docker-nginx-webdav" \
     vendor="the Docker Community" \
-    version="1.0.0" \
+    version="2024.10" \
     url="https://github.com/InstaZDLL/docker-nginx-webdav"
 
 ARG DEBIAN_FRONTEND=noninteractive
