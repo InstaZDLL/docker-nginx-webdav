@@ -1,15 +1,15 @@
 FROM ubuntu:noble
 
 COPY --chmod=755 ./entrypoint.sh /usr/local/bin/
-COPY --chmod=755 ./healthcheck.sh /usr/local/bin/healthcheck.sh
+COPY --chmod=755 ./healthcheck.sh /usr/local/bin/
 
 LABEL authors="Darwin Lamark" \
     maintainer="Darwin Lamark <contact@southlabs.fr>" \
-    title="docker-nginx-webdav" \
-    description="Webdav server based on nginx" \
+    title="nginx-webdav" \
+    description="WebDAV server based on Nginx" \
     base.name="docker.io/library/ubuntu:noble" \
     licenses="MIT" \
-    source="https://github.com/InstaZDLL/docker-nginx-webdav" \
+    source="https://github.com/InstaZDLL/nginx-webdav-sever" \
     vendor="the Docker Community" \
     version="2024.10"
 

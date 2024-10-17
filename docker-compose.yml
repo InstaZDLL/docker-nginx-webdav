@@ -1,11 +1,17 @@
-version: '2'
+version: '3.9'
 services:
   webdav:
-    build: .
+    image: nayeonyny/nginx-webdav
+    container_name: webdav-server
     ports:
-      - "80:80"
+      - 80:80
+      # - 443:443 if you set TLS_DISABLE to false
     volumes:
-      - "/mnt:/media"
+      - webdav_data:/media
+      # - /path/to/your/certificate_and_key:/ssl
     environment:
-      USERNAME: user
-      PASSWORD: passwd
+      USERNAME: user # Optional
+      PASSWORD: passwd # Optional
+      TLS_DISABLE: true # Set to 'false' to enable TLS/HTTPS
+volumes:
+    webdav_data:
