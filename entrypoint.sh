@@ -1,7 +1,8 @@
 #!/bin/bash
 : "${TLS_DISABLE:-true}"
 
-if [ "$TLS_DISABLE" = "false" ]; then
+if [ "$TLS_DISABLE" = "false" ]; 
+then
     sed -i 's/listen 80;/listen 443 ssl;/' /etc/nginx/conf.d/default.conf
 	sed -i '/listen 443 ssl;/a \
 	\
@@ -11,6 +12,8 @@ if [ "$TLS_DISABLE" = "false" ]; then
     ssl_ciphers HIGH:!aNULL:!MD5;' /etc/nginx/conf.d/default.conf
 	sed -i '1i server {\n    listen 80;\n    return 301 https://$host$request_uri;\n}' /etc/nginx/conf.d/default.conf
 	echo TLS configuration performed.
+else
+	echo Skipping TLS configuration
 fi
 
 if [[ -n "$USERNAME" ]] && [[ -n "$PASSWORD" ]]
