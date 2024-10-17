@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/sashgorokhov/docker-nginx-webdav/blob/master/Dockerfile)
+-	[`latest` (*Dockerfile*)](https://github.com/InstaZDLL/docker-nginx-webdav/blob/master/Dockerfile)
 
 [![](https://badge.imagelayers.io/sashgorokhov/webdav:latest.svg)](https://imagelayers.io/?images=sashgorokhov/webdav:latest 'Get your own badge on imagelayers.io')
 
