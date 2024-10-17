@@ -30,7 +30,7 @@ RUN rm /etc/nginx/sites-enabled/* && mkdir -p /ssl
 
 VOLUME ["/media", "/ssl"]
 
-EXPOSE 80
+EXPOSE 80 443
 
 HEALTHCHECK --interval=5m --timeout=3s \
   CMD /usr/local/bin/healthcheck.sh || exit 1
