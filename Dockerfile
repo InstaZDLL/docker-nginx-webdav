@@ -18,6 +18,7 @@ LABEL authors="Darwin Lamark" \
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
+    curl \
     nginx \
     nginx-extras \
     libnginx-mod-http-dav-ext \
