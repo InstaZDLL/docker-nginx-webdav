@@ -7,7 +7,7 @@
 # How to use this image
 
 ```console
-$ docker run --name webdav -p 80:80 -v /media:/media -d sashgorokhov/webdav
+$ docker run --name webdav -p 80:80 -v /media:/media -d nayeonyny/webdav
 ```
 This will start a webdav server listening on the default port of 80.
 Then access it via `http://localhost:80` or `http://host:80` in a browser.
@@ -19,7 +19,7 @@ Image's supported volumes:
 
 To restrict access to only authorized users, you can define two environment variables: `USERNAME` and `PASSWORD`
 ```console
-$ docker run --name webdav -p 80:80 -v /media:/media -e USERNAME=webdav -e PASSWORD=webdav -d sashgorokhov/webdav
+$ docker run --name webdav -p 80:80 -v /media:/media -e USERNAME=webdav -e PASSWORD=webdav -d nayeonyny/webdav
 ```
 
 # Supported Docker versions
@@ -27,6 +27,15 @@ $ docker run --name webdav -p 80:80 -v /media:/media -e USERNAME=webdav -e PASSW
 This image is officially supported on Docker version 1.10.2.
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+
+## Environment Variables
+The following environment variables can be set when running the Docker container:
+
+| ENV          | Default value | Example | Description                         |
+| ------------ | ------------- | ------- | ----------------------------------- |
+| TLS\_DISABLE | true          | false   | The name of the WordPress database. |
+| USERNAME     | none          | webdav  | The username for the WebDav.        |
+| PASSWORD     | none          | webdav  | The password for the WebDav.        |
 
 ## Author
 
