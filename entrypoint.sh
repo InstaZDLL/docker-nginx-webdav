@@ -26,7 +26,7 @@ if [ ! -f /docker-entrypoint-init.d/flagfile ]; then
         sed -i 's%auth_basic_user_file htpasswd;% %g' /etc/nginx/conf.d/default.conf
     fi
 	echo "[info] Creating the flagfile"
-    touch /docker-entrypoint-initdb.d/flagfile
+    touch /docker-entrypoint-init.d/flagfile
 else
     echo "[info] Nginx is already configured."
 fi
