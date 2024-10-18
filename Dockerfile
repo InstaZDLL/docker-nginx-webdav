@@ -1,4 +1,4 @@
-FROM ubuntu:noble
+FROM ubuntu:24.10
 
 COPY --chmod=755 ./entrypoint.sh /usr/local/bin/
 COPY --chmod=755 ./healthcheck.sh /usr/local/bin/
