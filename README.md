@@ -31,11 +31,12 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 ## Environment Variables
 The following environment variables can be set when running the Docker container:
 
-| ENV          | Default value | Example | Description                         |
-| ------------ | ------------- | ------- | ----------------------------------- |
-| TLS\_DISABLE | true          | false   | The name of the WordPress database. |
-| USERNAME     | none          | webdav  | The username for the WebDav.        |
-| PASSWORD     | none          | webdav  | The password for the WebDav.        |
+| ENV            | Default value | Example | Description                                                   |
+| -------------- | ------------- | ------- | ------------------------------------------------------------- |
+| TLS\_DISABLE   | true          | false   | The name of the WordPress database.                           |
+| OPTIMIZED\_FTC | true          | false   | Will set **sendfile_max_chunk 1m** to the nginx configuration |
+| USERNAME       | none          | webdav  | The username for the WebDav.                                  |
+| PASSWORD       | none          | webdav  | The password for the WebDav.                                  |
 
 ## Author
 
