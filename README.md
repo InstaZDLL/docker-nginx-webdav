@@ -8,7 +8,6 @@
 [![Last commit](https://img.shields.io/github/last-commit/InstaZDLL/docker-nginx-webdav?style=for-the-badge)](https://github.com/InstaZDLL/docker-nginx-webdav/commits/main)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/InstaZDLL/docker-nginx-webdav/total?style=for-the-badge&color=%230080ff)
 
-
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 ## How to use this image
