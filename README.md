@@ -2,7 +2,6 @@
 
 - [`latest` (*Dockerfile*)](https://github.com/InstaZDLL/docker-nginx-webdav/blob/master/Dockerfile)
 
-
 [![Version](https://img.shields.io/github/v/release/InstaZDLL/docker-nginx-webdav?style=for-the-badge)](https://github.com/InstaZDLL/docker-nginx-webdav/releases)
 [![AFLv3 License](https://img.shields.io/github/license/InstaZDLL/docker-nginx-webdav?logo=e&style=for-the-badge)](https://opensource.org/license/afl-3-0-php)
 [![Last commit](https://img.shields.io/github/last-commit/InstaZDLL/docker-nginx-webdav?style=for-the-badge)](https://github.com/InstaZDLL/docker-nginx-webdav/commits/main)
