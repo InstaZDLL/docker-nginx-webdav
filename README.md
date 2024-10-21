@@ -2,7 +2,14 @@
 
 - [`latest` (*Dockerfile*)](https://github.com/InstaZDLL/docker-nginx-webdav/blob/master/Dockerfile)
 
-[![](https://badge.imagelayers.io/sashgorokhov/webdav:latest.svg)](https://imagelayers.io/?images=sashgorokhov/webdav:latest 'Get your own badge on imagelayers.io')
+
+[![Version](https://img.shields.io/github/v/release/InstaZDLL/docker-nginx-webdav?style=for-the-badge)](https://github.com/InstaZDLL/docker-nginx-webdav/releases)
+[![AFLv3 License](https://img.shields.io/github/license/InstaZDLL/docker-nginx-webdav?logo=e&style=for-the-badge)](https://opensource.org/license/afl-3-0-php)
+[![Last commit](https://img.shields.io/github/last-commit/InstaZDLL/docker-nginx-webdav?style=for-the-badge)](https://github.com/InstaZDLL/docker-nginx-webdav/commits/main)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/InstaZDLL/docker-nginx-webdav/total?style=for-the-badge&color=%230080ff)
+
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 ## How to use this image
 
