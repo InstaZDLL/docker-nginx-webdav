@@ -4,8 +4,8 @@
 if [ ! -f /docker-entrypoint-init.d/flagfile ]; then
     if [ "$TLS_DISABLE" = "false" ]; then
         echo "[info] TLS is enabled"
-        openssl ecparam -genkey -name secp384r1 -out /ssl/private.pem
-        openssl req -new -x509 -sha384 -key /ssl/private.pem -out /ssl/certificate.pem -days 365 -subj "/C=US/ST=State/L=City/O=Organization/OU=Unit/CN=localhost"
+        #openssl ecparam -genkey -name secp384r1 -out /ssl/private.pem
+        #openssl req -new -x509 -sha384 -key /ssl/private.pem -out /ssl/certificate.pem -days 365 -subj "/C=US/ST=State/L=City/O=Organization/OU=Unit/CN=localhost"
         echo "[info] Self-signed TLS certificate created"
 
         sed -i 's/listen 80;/listen 443 ssl;/' /etc/nginx/conf.d/default.conf
@@ -16,7 +16,7 @@ if [ ! -f /docker-entrypoint-init.d/flagfile ]; then
 		ssl_protocols TLSv1.2 TLSv1.3; \
 		ssl_ciphers HIGH:!aNULL:!MD5;' /etc/nginx/conf.d/default.conf
 
-        sed -i '3i server {\n    listen 80;\n    return 301 https://$host$request_uri;\n}' /etc/nginx/conf.d/default.conf
+        #sed -i '3i server {\n    listen 80;\n    return 301 https://$host$request_uri;\n}' /etc/nginx/conf.d/default.conf
         
         echo "[info] TLS configuration performed."
     else
