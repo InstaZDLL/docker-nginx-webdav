@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 
-RUN rm /etc/nginx/sites-enabled/* && mkdir -p /ssl /docker-entrypoint-init.d
+RUN rm /etc/nginx/sites-enabled/* && mkdir -p /ssl /docker-entrypoint-init.d && \
+  chmod -R 755 /media/
 
 VOLUME ["/media", "/ssl"]
 
