@@ -13,6 +13,5 @@ services:
       USERNAME: user # Optional
       PASSWORD: passwd # Optional
       TLS_DISABLE: true # Set to 'false' to enable TLS/HTTPS
-      OPTIMIZED_FTC: true # Set to 'false' will remove the sendfile_max_chunk 1m
 volumes:
     webdav_data:
